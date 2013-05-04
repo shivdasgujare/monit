@@ -625,7 +625,7 @@ checksslincldir() { :
 
 # Check for ssl libraries 
 checkssllibdirdynamic() { :
-    CRYPTOLIB=`ls -1 $1/libcrypto.so* $1/libcrypto.dylib* 2>/dev/null | wc -l`
+    CRYPTOLIB=`ls -1 $1/../../lib/libcrypto.so* $1/libcrypto.dylib* 2>/dev/null | wc -l`
     SSLLIB=`ls -1 $1/libssl.so* $1/libssl.dylib* 2>/dev/null | wc -l`
     if test "(" $CRYPTOLIB -gt 0 -a $SSLLIB -gt 0 ")"
     then
